@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .repository_value {
+    
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .name_count
+  {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+  }
+  .refresh 
+  {
+    
+    display: flex;
+    align-items: center;
+    gap:3px;
+
+  }
+  .refresh span
+  {
+    font-size: 20px;
+  }
+  .add
+  {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .add span
+  {
+    font-size: 20px;
+  }
+  
+  /* Headr Section */
+  .header_component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .header_component h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header_component p {
+    font-size: 16px;
+    margin: 0;
+    color: #777;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .header-buttons .refresh {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .header-buttons .refresh:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .header-buttons .add {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .header-buttons .add:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .search-bar .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #aaa;
+    pointer-events: none; /* Prevents the icon from blocking clicks */
+  }
+  
+  
+.search-bar input {
+    width: 30%;
+    padding: 10px 10px 10px 40px; /* Add padding-left for the icon */
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .search-bar input::placeholder {
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .search-bar input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+  }
+  /* Repository List */
+  .repository-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .repository-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repo-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .repo-details h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .repo-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  .repo_imform
+  {
+    display: flex;
+    gap:20px;
+  }
+  .framework_status
+  {
+    display: flex;
+    gap:6px;
+    align-items: center;
+  }
+  .status_by_color
+  {
+     height:8px;
+     width: 8px;
+     background-color: #358eee;
+     border-radius: 100%;
+  }
+  /* Accessibility Status */
+  .status {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
+  
+  .status.Public {
+    background-color: #e0f7e0;
+    color: #2e7d32;
+  }
+  
+  .status.Private {
+    background-color: #ffe0e0;
+    color: #d32f2f;
+  }
+  
+  @media(max-width:920px)
+  {
+    .search-bar input {
+      width: 45%;
+     
+    }
+  }
+  @media(max-width:700px)
+  {
+    .search-bar input {
+        width: 50%;
+        
+      }
+  }
+  @media(max-width:650px)
+  {
+    .search-bar input {
+        width: 55%;
+        
+      }
+      .name_count h1 
+      {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .header-buttons { 
+        gap: 8px;
+      }
+      .header-buttons button {
+        padding: 6px 12px;
+        font-size: 12px; 
+      }
+      .not_display_comp
+      {
+        display: none;
+      }
+
+  }
+  @media(max-width:550px)
+  {
+    .repository_value {
+         margin: 0;
+
+     
+      }
+      .header_component {
+       
+        flex-direction: column;
+        
+        align-items: unset;
+        gap:10px;
+      }
+      .search-bar input {
+        width: 100%;
+        padding: 10px 10px 10px 40px; /* Add padding-left for the icon */
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        outline: none;
+      }
+    
+  }
+  

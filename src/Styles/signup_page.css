@@ -1,0 +1,1036 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Main container to hold left and right sections */
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Left section */
+  .left-section {
+    width: 49.87%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Subtract\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position-y:70vh;
+    
+    background-size: 20vh ;
+  }
+  
+  
+
+  .stats-top-box
+  {
+    background-color: white;
+border-radius: 0.75rem; /* equivalent to rounded-xl */
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+padding: 1.5rem; /* equivalent to p-6 */
+margin-bottom: 1rem; /* equivalent to mb-4 */
+width: fit-content; /* equivalent to w-fit */
+
+    
+  }
+  
+  .Main-heading-page
+  {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid;
+    padding: 0.25rem 0;
+    
+  }
+  .AI_heading{
+    font-size: 0.875rem; /* equivalent to text-sm */
+font-weight: 500; /* equivalent to font-medium */
+  }
+  
+  .stats-data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* equivalent to gap-8 */
+    text-align: center;
+    margin-bottom: 1.5rem; /* equivalent to mb-6 */
+        
+  }
+   
+  .stats-section-bottom{
+    background-color: white;
+    position: relative;
+    /* equivalent to left-1/4 */
+    top: -2.5rem; /* equivalent to -top-10 */
+    border-radius: 0.75rem; /* equivalent to rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* equivalent to shadow-lg */
+    padding-left: 3rem; /* equivalent to px-12 */
+    padding-right: 3rem; /* equivalent to px-12 */
+    padding-top: 1.5rem; /* equivalent to py-6 */
+    padding-bottom: 1.5rem; /* equivalent to py-6 */
+    width: fit-content; /* equivalent to w-fit */
+    
+  }
+  .stat-card {
+    background-color: white;
+    position: relative;
+    left: 75%;
+    top: -2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 3rem;
+    width: fit-content;
+  }
+  
+  .flex-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon-container {
+    width: 2rem;
+    height: 2rem;
+    background-color: #bfdbfe; /* bg-blue-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+  }
+  
+  .icon-inner {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    border: 0.25rem solid #3b82f6; /* border-blue-500 */
+  }
+  
+  .flex-row-text {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #16a34a; /* text-green-600 */
+    font-size: 0.875rem; /* text-sm */
+  }
+  
+  .icon-svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .issues-fixed {
+    color: #4b5563; /* text-gray-600 */
+    font-size: 0.875rem; /* text-sm */
+  }
+  
+  .fixed-count {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+  }
+  
+  
+  /* Right section */
+  .right-section{
+
+    width: 50%;
+    background-color: #fff;
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 20px;
+  }
+  .right-content{
+    padding: 10px 0;
+  }
+  .header_content_icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+
+  }
+  .header_content_icon img
+  { 
+    width: 35.62px;
+    height: 36px;
+    
+  }
+  .header_content_icon h1{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    color:#181D27;
+    margin-left: 2px;
+  }
+  
+  .right-section h3 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #181D27;
+  }
+  
+  /* Buttons for SAAS and Self Hosted */
+  .button-group {
+    
+   
+    border:1px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+  }
+  .btn_sign_in{
+     width: 311px;
+     height: 50px;
+     border-radius: 6px;
+     border:0px;
+     padding: 16px 14px 16px 14px;
+     cursor: pointer;
+  }
+  .saas-btn_sass, .self-hosted-btn_self {
+    transition: background-color 0.3s ease; /* 0.5 seconds transition for smooth color change */
+  }
+  .bottom_line_right
+  {
+    
+    height: 1px;
+    background-color: black;
+    
+  }
+  .sass_oriented
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    margin: 10px 0;
+    
+  }
+ .sass_oriented_sign{
+    width: 446px;
+    height:57.59px;
+   border-radius: 0px;
+    padding:16px 170px 16px 170px 16px;
+    background-color: #ffffff;
+    border-color: #D8DAE5;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-decoration: none;
+    
+ }
+ .sass_oriented_sign:hover
+ {
+    background-color: #F9F6EE;
+   
+ }
+ .Self_oriented{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    margin: 10px 0px;
+    cursor: pointer;
+
+ }
+ .self-oriented_sign{
+    width: 446px;
+    height:57.59px;
+   border-radius: 0px;
+    padding:16px 170px 16px 170px 16px;
+    background-color: #ffffff;
+    border-color: #D8DAE5;
+    border-radius: 6px;
+    cursor: pointer;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     text-decoration: none;
+    
+ }
+ .self-oriented_sign:hover
+ {
+    background-color: #F9F6EE;
+ }
+  .sign_image_icon
+  {
+    height:30px;
+    width:30px
+  }
+  .sass_oriented_sign div
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6px
+  }
+  .self-oriented_sign div
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6px
+  }
+  /* Sign-in buttons */
+ 
+  
+ 
+  
+  /* Privacy Policy section */
+  .privacy-policy {
+    margin-top: 40px;
+  }
+  
+  .privacy-policy p {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .privacy-policy a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .btn_style {
+    display: inline-block;
+    background-color: #1570EF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_style:hover {
+    background-color: #0056b3; /* Example of hover effect */
+  }
+  
+  .sass_oriented_sign, .self-oriented_sign {
+    /* Specific styles for each sign-in button */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .sign_image_icon {
+    margin-right: 10px;
+  }
+  @media (max-width:1450px)
+  {
+    .btn_sign_in{
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+       
+        padding: 12px 11px 14px 12px;
+        
+     }
+     .sass_oriented_sign{
+        width: 400px;
+        height:48.59px;
+       
+        padding:12px 140px 13px 140px 12px;
+        
+        border-radius: 4px;
+       
+        
+     }
+       .header_content_icon h1{
+        font-weight: 350;
+        font-size: 25px;
+        
+      }
+      .self-oriented_sign{
+        width: 440px;
+        height:48.59px;
+       border-radius: 0px;
+        padding:12px 140px 13px 140px 12px;
+        border-radius: 4px;
+        
+        
+     }
+     .sign_image_icon
+  {
+    height:25px;
+    width: 25px;
+  }
+  .right-section h3 {
+    font-size: 28px;
+    line-height: 44px;
+    font-weight: 550;
+    margin-bottom: 28px;
+    
+  }
+
+      
+  }
+  @media (max-width:1350px)
+  {
+    .btn_sign_in{
+        width: 225px;
+        height: 38px;
+        border-radius: 4px;
+       
+        padding: 10px 10px 12px 10px;
+        
+     }
+     .header_content_icon h1{
+        font-weight: 320;
+        font-size: 20px;
+        
+      }
+      .sass_oriented_sign{
+        width: 350px;
+        height:42.59px;
+       
+        padding:11px 120px 12px 120px 11px;
+        
+        border-radius: 3px;
+       
+        
+     }
+     .sign_image_icon
+     {
+       height:22px;
+       width: 22px;
+     }
+     .right-section h3 {
+        font-size: 25px;
+        line-height: 42px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        
+      }
+      .stat-card {
+        
+       
+        left: 60%;
+        
+      }
+      
+  }
+  @media (max-width:1150px)
+  {
+    .btn_sign_in{
+        width: 200px;
+        height: 34px;
+        border-radius: 4px;
+       
+        padding: 8px 8px 10px 8px;
+        
+     }
+     .header_content_icon h1{
+        font-weight: 300;
+        font-size: 16px;
+        
+      }
+      .sass_oriented_sign{
+        width: 320px;
+        height:40.59px;
+       
+        padding:10px 100px 10px 100px 10px;
+        
+        border-radius: 2px;
+       
+        
+     }
+     .sign_image_icon
+     {
+       height:18px;
+       width: 18px;
+     }
+     .right-section h3 {
+        font-size: 22px;
+        line-height: 38px;
+        font-weight: 450;
+        margin-bottom: 22px;
+        
+      }
+      .stat-card {
+        
+       
+        left: 50%;
+        
+      }
+      .left-section {
+        width: 47.87%;
+        
+      }
+      
+  }
+  @media (max-width:1050px)
+  {
+    .btn_sign_in{
+        width: 180px;
+        
+       
+       
+        padding: 6px 6px 8px 6px;
+        
+     }
+     .header_content_icon h1{
+        font-weight: 250;
+        font-size: 14px;
+        
+      }
+      .sass_oriented_sign{
+        width: 300px;
+        height:38.59px;
+       
+        padding:8px 80px 8px 80px 8px;
+        
+        border-radius: 1px;
+       
+        
+     }
+     .sign_image_icon
+     {
+       height:16px;
+       width: 16px;
+     }
+     .right-section h3 {
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        
+      }
+      .stat-card {
+        
+       
+        left: 47%;
+        
+      }
+      .left-section {
+        width: 45.87%;
+        
+      }
+      
+  }
+  @media (max-width:950px)
+  {
+     .main-container {
+        flex-direction: column;
+        
+      }
+      .left-section {
+        width: 98.87%;
+        
+      }
+      .stat-card {
+        
+       
+        left: 75%;
+        
+      }
+      .right-section{
+
+        width: 98.9%;
+        
+    
+      }
+      .header_content_icon h1{
+        font-weight: 400;
+        font-size: 30px;
+        
+      }
+      .right-section h3 {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 600;
+        
+      }
+      .btn_sign_in{
+        width: 311px;
+        height: 50px;
+      
+        
+        padding: 16px 14px 16px 14px;
+        
+     }
+     .sign_image_icon
+     {
+       height:30px;
+       width:30px
+     }
+     .sass_oriented_sign{
+        width: 446px;
+        height:57.59px;
+       
+        padding:16px 170px 16px 170px 16px;
+        
+        
+     }
+     .self-oriented_sign{
+        width: 446px;
+        height:57.59px;
+       
+        padding:16px 170px 16px 170px 16px;
+       
+        
+     }
+
+     
+
+  }
+  @media (max-width:850px)
+  {
+     
+      .left-section {
+        width: 99.87%;
+        
+      }
+      .stat-card {
+        
+       
+        left: 73%;
+        
+      }
+      .right-section{
+
+        width: 99.9%;
+        
+    
+      }
+      .header_content_icon h1{
+        font-weight: 350;
+        font-size: 27px;
+        
+      }
+      .right-section h3 {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 550;
+        
+      }
+      .btn_sign_in{
+        width: 300px;
+        height: 45px;
+   
+        
+        padding: 14px 12px 14px 13px;
+        
+     }
+     .sign_image_icon
+     {
+       height:27px;
+       width:27px
+     }
+     .sass_oriented_sign{
+        width: 430px;
+        height:52.59px;
+       
+        padding:14px 150px 14px 140px 14px;
+        
+        
+     }
+     .self-oriented_sign{
+        width: 430px;
+        height:52.59px;
+       
+        padding:14px 150px 14px 150px 14px;
+       
+        
+     }
+
+     .btn_sign_in{
+        width: 250px;
+        height: 40px;
+        border-radius: 3px;
+    
+        padding: 13px 12px 14px 12px;
+        
+     }
+
+  }
+  @media (max-width:750px)
+  {
+    .main-container {
+        
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .left-section
+      {
+        display: none;
+      }
+      .right-section h3 {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 550;
+        
+      }
+      .btn_sign_in{
+        width: 300px;
+        height: 45px;
+      
+        
+        padding: 14px 12px 14px 13px;
+        
+     }
+     .sign_image_icon
+     {
+       height:27px;
+       width:27px
+     }
+     .sass_oriented_sign{
+        width: 430px;
+        height:52.59px;
+       
+        padding:14px 150px 14px 140px 14px;
+        
+        
+     }
+     .self-oriented_sign{
+        width: 430px;
+        height:52.59px;
+       
+        padding:14px 150px 14px 150px 14px;
+       
+        
+     }
+
+     .btn_sign_in{
+        width: 250px;
+        height: 40px;
+        padding: 13px 12px 14px 12px;
+        
+     }
+     .right-section{
+
+        width: 100%;
+        
+        padding: 30px;
+        
+       
+    
+      }
+
+  }
+  @media (max-width:650px)
+  {
+    
+      .right-section h3 {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 550;
+        
+      }
+      
+     .sign_image_icon
+     {
+       height:27px;
+       width:27px
+     }
+     .sass_oriented_sign{
+        width: 430px;
+        height:52.59px;
+       
+        padding:14px 150px 14px 140px 14px;
+        
+        
+     }
+     .self-oriented_sign{
+        width: 430px;
+        height:52.59px;
+       
+        padding:14px 150px 14px 150px 14px;
+       
+        
+     }
+
+     .right-section{
+
+        width: 100%;
+        
+        padding: 30px;
+        
+       
+    
+      }
+      .header_content_icon img
+  { 
+    width: 28.62px;
+    height: 28px;
+    
+  }
+  .header_content_icon h1{
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 28px;
+    color:#181D27;
+    margin-left: 1px;
+  }
+  .right-section h3 {
+    font-size: 26px;
+    line-height: 43px;
+    font-weight: 540;
+    margin-bottom: 27px;
+    
+  }
+  .btn_sign_in{
+    width: 220px;
+    height: 40px;
+    
+    
+    padding: 14px 12px 14px 12px;
+
+ }
+ .sign_image_icon
+  {
+    height:27px;
+    width:27px;
+  }
+  .sass_oriented_sign{
+    width: 380px;
+    height:48.59px;
+  
+    padding:12px 140px 12px 140px 12px;
+    
+    border-radius: 4px; 
+ }
+ .self-oriented_sign{
+    width: 380px;
+    height:48.59px;
+   border-radius: 0px;
+    padding:12px 140px 12px 140px 12px;
+    border-radius: 4px;   
+ }
+
+
+  }
+  @media (max-width:550px)
+  {
+    
+      .right-section h3 {
+        font-size: 25px;
+        line-height: 42px;
+        font-weight: 500;
+        
+      }
+    
+     .sign_image_icon
+     {
+       height:22px;
+       width:22px
+     }
+     .sass_oriented_sign{
+        width: 400px;
+        height:46.59px;
+       
+        padding:12px 120px 10px 120px ;
+        
+        
+     }
+     .self-oriented_sign{
+        width: 380px;
+        height:46.59px;
+       
+        padding:12px 120px 12px 120px;
+       
+        
+     }
+
+
+     .btn_sign_in{
+        width: 200px;
+        height: 34px;
+        border-radius: 4px;
+    
+        padding: 11px 10px 11px 10px;
+        
+     }
+     .right-section{
+
+        padding: 26px;
+      }
+      .header_content_icon img
+  { 
+    width: 25.62px;
+    height: 25px;
+    
+  }
+  .header_content_icon h1{
+    font-weight: 250;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 1px;
+  }
+  .right-section h3 {
+    font-size: 23px;
+    line-height: 41px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    
+  }
+  
+ .sign_image_icon
+  {
+    height:23px;
+    width:23px;
+  }
+  .sass_oriented_sign{
+    width: 300px;
+    height:48.59px;
+  
+    padding:10px 50px 10px 50px;
+    
+ }
+ .self-oriented_sign{
+    width: 300px;
+    
+    padding:10px 50px 10px 50px;
+    border-radius: 3px;   
+ }
+
+
+  }
+  @media(max-width:500px)
+  {
+    .btn_sign_in{
+      width: 180px;
+      height: 34px;
+      border-radius: 4px;
+  
+      padding: 11px 8px 11px 8px;
+      
+   }
+   
+ 
+   
+  
+  }
+  @media (max-width:450px)
+  {
+    
+      .right-section h3 {
+        font-size: 20px;
+        line-height: 38px;
+        font-weight: 450;
+        
+      }
+      .btn_sign_in{
+        width: 170px;
+        height: 35px;
+       
+        
+        padding: 10px 8px 10px 8px;
+        
+     }
+     .sign_image_icon
+     {
+       height:18px;
+       width:18px
+     }
+     .sass_oriented_sign{
+        width: 320px;
+        height:40.59px;
+       
+        padding:12px 80px 10px 80px ;
+        
+        
+     }
+     .self-oriented_sign{
+        width: 320px;
+        height:40.59px;
+       
+        padding:12px 80px 10px 80px;
+       
+        
+     }
+
+
+     .btn_sign_in{
+        width: 140px;
+        height: unset;
+        border-radius: 2px;
+    
+        padding: 11px 8px 11px 8px;
+        
+     }
+     .right-section{
+
+        padding: 22px;
+      }
+      .header_content_icon img
+  { 
+    width: 22.62px;
+    height: 22px;
+    
+  }
+  .header_content_icon h1{
+    font-weight: 220;
+    font-size: 16px;
+    line-height: 22px;
+   
+  }
+  .right-section h3 {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 450;
+    margin-bottom: 20px;
+    
+  }
+
+ .sign_image_icon
+  {
+    height:21px;
+    width:21px;
+  }
+  .sass_oriented_sign{
+    width: 250px;
+    height:42.59px;
+  
+    padding:10px 30px 10px 30px;
+    
+ }
+ .self-oriented_sign{
+    width: 250px;
+    
+    padding:10px 30px 10px 30px;
+    
+ }
+
+
+  }
+

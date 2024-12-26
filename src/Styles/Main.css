@@ -1,0 +1,499 @@
+/* Main Container */
+.main_component_page
+{
+  display: flex;
+  height: 100vh; 
+}
+
+.left_side {
+  width: 20vw;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Makes the left_side static */
+  top: 0; /* Stick to the top of the viewport */
+    
+    
+  }
+  .nav_berger
+  {
+    display: none;
+    
+  }
+  /* Remove bullet points from list items */
+  li {
+    list-style: none;
+  }
+  
+  /* Logo and Heading */
+  .heading_main {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 3px;
+  }
+  
+  .heading_main img {
+    width: 28.5px;
+    height: 32px;
+  }
+  
+  .heading_main p {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    color: #181d27;
+  }
+  
+  /* User Info Section */
+  .user_name {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 6px 12px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Dropdown Icon */
+  .drop_down_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .menu_item_value
+  {
+     height:90vh;
+     
+  }
+
+  /* Navigation Menu Container */
+  .nav_menu_item {
+    display: flex;
+    flex-direction: column;
+    height:89%;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Top Navigation Styles */
+  .top_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+  }
+  
+  .left_bar_Link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+    color: #000;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .left_bar_Link div {
+    font-size: 24px; /* Increased icon size */
+    margin-left: 10px;
+  }
+  
+  .left_bar_Link Link {
+    text-decoration: none;
+    color: inherit;
+
+  }
+  
+  .left_bar_Link:hover {
+    background-color: #e6e6e6; /* Hover effect */
+  }
+  
+  .left_bar_Link.active {
+    background-color: #007fff; /* Active tab background */
+    color: #fff;
+  }
+  
+  /* Bottom Navigation (Support and Logout) */
+  .bottom_nav {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+  }
+  
+  .bottom_nav .left_bar_Link Link {
+    font-size: 16px;
+  }
+  
+  .bottom_nav .left_bar_Link div {
+    font-size: 24px;
+  }
+  .Logout
+  {
+    color: rgb(201, 13, 13);
+  }
+  .right_Main_component
+  {
+    width: 80vw;
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enables vertical scrolling */
+  background-color: #f9f9f9; /* Optional for contrast */
+  }
+  .link_url_route
+  {
+    width: 200px;
+    padding:10px;
+  }
+  @media(max-width:1320px)
+  {
+
+    .left_side {
+      width: 23vw;
+      height:100vh;
+      
+    }
+    
+  }
+  @media(max-width:1200px)
+  {
+    .link_url_route
+  {
+    width: 170px;
+    padding:8px;
+  }
+  }
+  @media(max-width:1020px)
+  {
+    .left_side
+    {
+      width:25vw;
+    }
+  }
+  @media(max-width:1000px)
+  {
+    .link_url_route
+  {
+    width: 150px;
+    padding:7px;
+  }
+  }
+  @media(max-width:935px)
+  {
+    .left_side {
+      padding: 14px;
+    }
+    .heading_main {
+
+      padding-bottom: 14px;
+      gap: 2px;
+    }
+    .heading_main img {
+      width: 25.5px;
+      height: 28px;
+    }
+    .heading_main p {
+     
+      font-size: 20px;
+      font-weight: 350;
+      line-height: 22.4px;
+      
+    }
+    .user_name {
+      gap: 8px;
+      padding: 4px 8px;
+      border-radius: 6px; 
+    }
+    .drop_down_icon {
+      width: 18px;
+      height: 18px;
+    }
+    .menu_item_value
+    {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .nav_menu_item {
+      gap:4px;
+      
+      width: 100%;
+      margin-top: 15px;
+    }
+    .top_nav {
+      gap: 2px;
+    }
+    
+  .left_bar_Link {
+    
+    gap: 7px;
+    padding: 8px;
+    font-size: 16px; /* Increased font size */ 
+  }
+  .left_bar_Link div {
+    font-size: 20px; /* Increased icon size */
+    margin-left: 8px;
+  }
+
+  .bottom_nav .left_bar_Link Link {
+    font-size: 14px;
+  }
+  .bottom_nav .left_bar_Link div {
+    font-size: 20px;
+  }
+
+    
+    
+  }
+  @media(max-width:880px)
+  {
+    .link_url_route
+  {
+    width: 130px;
+    padding:6px;
+  }
+  }
+  @media(max-width:800px)
+  {
+    .link_url_route
+  {
+    width: 110px;
+    padding:5px;
+  }
+  }
+  @media(max-width:776px)
+  {
+    .left_side {
+      padding: 10px;
+      
+    }
+    .heading_main {
+
+      padding-bottom: 12px;
+      gap: 1px;
+    }
+    .heading_main img {
+      width: 21.5px;
+      height: 24px;
+    }
+    .heading_main p {
+     
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20.4px;
+      
+    }
+    .user_name {
+      gap: 4px;
+      padding: 3px 5px;
+      border-radius: 6px; 
+    }
+    .drop_down_icon {
+      width: 14px;
+      height: 14px;
+    }
+    .nav_menu_item {
+      gap:2px;
+      height: 100%;
+      width: 100%;
+      margin-top: 13px;
+    }
+    .top_nav {
+      gap: 2px;
+    }
+    
+  .left_bar_Link {
+    
+    gap: 4px;
+    padding: 4px;
+    font-size: 12px; /* Increased font size */ 
+  }
+  .left_bar_Link div {
+    font-size: 16px; /* Increased icon size */
+    margin-left: 6px;
+  }
+
+  .bottom_nav .left_bar_Link Link {
+    font-size: 12px;
+  }
+  .bottom_nav .left_bar_Link div {
+    font-size: 16px;
+  }
+  .user_name {
+    gap: 5px;
+    border-radius: 6px; 
+  }
+  .user_name p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+    
+    
+  }
+  @media(max-width:650px)
+  {
+    .link_url_route
+  {
+    width: 90px;
+    padding:4px;
+  }
+  }
+  @media(max-width:600px)
+  {
+    .left_side
+    {
+      width:100vw;
+      position: unset;
+      top:unset;
+      height: fit-content;
+      
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      overflow: hidden;
+      scrollbar-width: none;
+      scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+     
+
+    }
+    .heading_responsive
+    {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav_berger
+    {
+      display: inline-block;
+
+
+    }
+   
+    .nav_berger button 
+    {
+      
+        padding: 10px;
+        margin: 0;
+        border: none;
+        background: none;
+        outline: none;
+        box-shadow: none;
+        font: inherit; /* Inherit font styles from the parent element */
+        color: inherit; /* Inherit text color */
+        cursor: pointer; /* Optionally set a custom pointer */
+       
+        font-size: 30px;
+        
+       
+    }
+   
+    .nav_menu_item
+    {
+      justify-content: unset;
+      height: fit-content;
+      width: fit-content;
+    }
+    .menu_item_value
+  {  
+    display: none;
+     height: fit-content;
+    
+     overflow: hidden;
+    
+     
+  }
+  .show_menu
+  {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Reset position */
+  }
+  .heading_main img {
+    width: 28.5px;
+    height: 32px;
+  }
+  .heading_main p {
+    
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+   
+  }
+  .user_name { 
+    width: 90%;
+    margin-left:20px;
+    margin-right:20px;
+    justify-content:space-between;
+    align-items: center;
+  }
+ .user_name p 
+ {
+    font-size: 20px;
+    font-weight: 400;
+ }
+  .user_name div 
+  {
+    font-size: 40px;
+    margin-top:3px;
+  }
+  .nav_menu_item
+  {
+    width: 90%;
+    margin-left:20px;
+    margin-right: 20px;
+    
+    
+  }
+  .left_bar_Link {
+   
+    gap: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px; /* Increased font size */ 
+  }
+  .left_bar_Link div {
+    font-size: 24px; /* Increased icon size */
+    margin-left: 10px;
+    color: #000;
+  }
+
+  .left_bar_Link.active {
+    background-color: #ffffff; /* Active tab background */
+    color: #fff;
+  }
+  .Logout div
+  {
+    color: rgb(165, 5, 5);
+  }
+  .main_component_page
+{
+  flex-direction: column;
+  height: unset;
+
+}
+.right_Main_component
+  {
+    width: 100%;
+  height: unset; /* Full viewport height */
+  overflow-y: unset; /* Enables vertical scrolling */
+
+  }
+  @media(max-width:650px)
+  {
+    .link_url_route
+  {
+    width: 200px;
+    padding:10px;
+  }
+  }
+
+    
+    
+  }
